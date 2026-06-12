@@ -367,18 +367,18 @@
       <div class="week-body">
         <div class="day-block">
           <div class="day-label">Day 1–2 · Setup</div>
-          <div class="task-item"><div class="task-dot"></div><div class="task-text">Create profiles on LinkedIn, Naukri, Instahyre, Wellfound, Cutshort</div><span class="task-tag tag-prep">SETUP</span></div>
+          <div class="task-item"><div class="task-dot"></div><div class="task-text">Create/update profiles on LinkedIn, Naukri, iimjobs, Cutshort, Wellfound</div><span class="task-tag tag-prep">SETUP</span></div>
           <div class="task-item"><div class="task-dot"></div><div class="task-text">Upload resume v3 to all platforms · set "Open to Work" visible to recruiters only</div><span class="task-tag tag-prep">SETUP</span></div>
           <div class="task-item"><div class="task-dot"></div><div class="task-text">Set up job alerts on all platforms — 2x daily check (9am + 8pm)</div><span class="task-tag tag-prep">SETUP</span></div>
         </div>
         <div class="day-block">
           <div class="day-label">Day 3–4 · First applications</div>
-          <div class="task-item"><div class="task-dot"></div><div class="task-text">Apply to 20 jobs — Founder's Office, Chief of Staff roles on LinkedIn + Wellfound</div><span class="task-tag tag-apply">APPLY</span></div>
-          <div class="task-item"><div class="task-dot"></div><div class="task-text">Target: Series A–C startups in FinTech, SaaS, D2C — filter by remote-friendly</div></div>
+          <div class="task-item"><div class="task-dot"></div><div class="task-text">Apply to 20 jobs — Founder's Office, Chief of Staff roles on iimjobs + Wellfound + LinkedIn</div><span class="task-tag tag-apply">APPLY</span></div>
+          <div class="task-item"><div class="task-dot"></div><div class="task-text">Target: Series A–C startups in FinTech, SaaS, D2C on Wellfound India — filter remote-friendly</div></div>
         </div>
         <div class="day-block">
           <div class="day-label">Day 5–7 · Volume up</div>
-          <div class="task-item"><div class="task-dot"></div><div class="task-text">Apply to 20 jobs — BI Lead, Analytics Manager on Naukri + LinkedIn</div><span class="task-tag tag-apply">APPLY</span></div>
+          <div class="task-item"><div class="task-dot"></div><div class="task-text">Apply to 20 jobs — BI Lead, Analytics Manager on Naukri + iimjobs (15 LPA+ filter)</div><span class="task-tag tag-apply">APPLY</span></div>
           <div class="task-item"><div class="task-dot"></div><div class="task-text">Log every application in Tracker tab with company, role, platform, date</div></div>
         </div>
       </div>
@@ -400,7 +400,8 @@
         <div class="day-block">
           <div class="day-label">Day 11–12 · Recruiter outreach</div>
           <div class="task-item"><div class="task-dot"></div><div class="task-text">Message 10 recruiters/day on LinkedIn with sharp 3-line cold DM</div><span class="task-tag tag-out">OUTREACH</span></div>
-          <div class="task-item"><div class="task-dot"></div><div class="task-text">Search: "hiring BI" "hiring analytics" "chief of staff" on LinkedIn — connect + message</div><span class="task-tag tag-out">OUTREACH</span></div>
+          <div class="task-item"><div class="task-dot"></div><div class="task-text">Search "hiring BI" "chief of staff hiring" "analytics manager" on LinkedIn — connect + message same day</div><span class="task-tag tag-out">OUTREACH</span></div>
+          <div class="task-item"><div class="task-dot"></div><div class="task-text">Apply via Cutshort AI matching — let the algorithm surface you to relevant startups passively</div><span class="task-tag tag-apply">APPLY</span></div>
         </div>
         <div class="day-block">
           <div class="day-label">Day 13–14 · Review + push</div>
@@ -469,19 +470,19 @@
   <div class="role-grid">
     <div class="role-card">
       <div class="role-name">Founder's Office / Chief of Staff</div>
-      <div class="role-platforms">LinkedIn · Wellfound · Cutshort</div>
+      <div class="role-platforms">iimjobs · Wellfound India · LinkedIn · Cutshort</div>
     </div>
     <div class="role-card">
       <div class="role-name">BI Lead / Analytics Manager</div>
-      <div class="role-platforms">Naukri · LinkedIn · Instahyre</div>
+      <div class="role-platforms">Naukri · iimjobs · hirist.tech · LinkedIn</div>
     </div>
     <div class="role-card">
       <div class="role-name">Product / Strategy Manager</div>
-      <div class="role-platforms">LinkedIn · Cutshort · Wellfound</div>
+      <div class="role-platforms">Cutshort · iimjobs · LinkedIn · Instahyre</div>
     </div>
     <div class="role-card">
-      <div class="role-name">Remote global analyst roles</div>
-      <div class="role-platforms">LinkedIn · Wellfound · Remote.co</div>
+      <div class="role-name">Remote-first global roles</div>
+      <div class="role-platforms">Wellfound · LinkedIn Remote · Foundit</div>
     </div>
   </div>
 
@@ -518,9 +519,12 @@
         <select id="f-platform">
           <option>LinkedIn</option>
           <option>Naukri</option>
-          <option>Wellfound</option>
-          <option>Instahyre</option>
+          <option>iimjobs</option>
           <option>Cutshort</option>
+          <option>Wellfound India</option>
+          <option>Instahyre</option>
+          <option>hirist.tech</option>
+          <option>Foundit</option>
           <option>Company website</option>
           <option>Referral</option>
           <option>Other</option>
@@ -785,9 +789,9 @@ function renderTracker() {
 // ── REMINDER ──────────────────────────────────────────
 const weekMissions = {
   1: [
-    'Set up all 5 job platforms with resume v3',
+    'Set up LinkedIn, Naukri, iimjobs, Cutshort, Wellfound',
     'Apply to 5+ Founder\'s Office roles',
-    'Set job alerts on LinkedIn + Naukri',
+    'Set job alerts on LinkedIn, Naukri + iimjobs',
     'Log everything in the Tracker tab'
   ],
   2: [
@@ -844,7 +848,7 @@ function toggleCheck(idx, key) {
 
 // ── TOGGLE REMINDERS ──────────────────────────────────
 const reminderMessages = {
-  morning: ['🌅 Morning check', 'Open LinkedIn and Naukri — check job alerts now.'],
+  morning: ['🌅 Morning check', 'Open LinkedIn, Naukri and iimjobs — check job alerts now.'],
   evening: ['📋 Apply time', 'Your evening application session starts now. Aim for 5 jobs.'],
   outreach: ['📩 Outreach time', 'Message 5 recruiters on LinkedIn. Keep it sharp and brief.'],
   log: ['📊 Log & review', 'Update your tracker. How many applications today?'],
